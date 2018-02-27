@@ -1,7 +1,27 @@
+#-------------------------------------#
+# This plugin was coded by ItzSkizzy
+# www.scorchgamez.net
+#-------------------------------------#
+#
+# IP addresses you WANT people to join through.
+# This  can be both letter and number IP addresses.
 IPs:
 - play.scorchgamez.net
+#
+# Ports players should use when joining.
+# If you run BungeeCord, your port is probably 25565
 Ports:
 - 25565
 Only-Port: true
+#
+# This is the message players will see when they are
+# declined access to the server
 Message: '&b%newline%&b&lScorch Gamez%newline%&7Please use: play.scorchgamez.net'
+#
+# Players with the permission 'scorchproxy.bypass' will
+# be able to join if this is set to true.
+# For security reasons, I recommend it stay false.
 Permissions-Bypass: false
+#
+# Don't touch this
+config-version: 1

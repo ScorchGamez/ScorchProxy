@@ -18,6 +18,7 @@ public class Main extends JavaPlugin implements Listener {
 
 	public void onEnable() {
 		getConfig().options().copyDefaults(true);
+		// getConfig().addDefault("config-version", Integer.valueOf(1));
 		saveDefaultConfig();
 		saveConfig();
 		reloadConfig();
@@ -26,6 +27,8 @@ public class Main extends JavaPlugin implements Listener {
 
 		Bukkit.getConsoleSender()
 				.sendMessage("[ScorchProxy] v" + getDescription().getVersion() + " is now enabled!");
+		Bukkit.getConsoleSender()
+				.sendMessage("[ScorchProxy] Detected config version: " + getConfig().get("config-version"));
 		Bukkit.getConsoleSender()
 				.sendMessage("[ScorchProxy] Permission bypass is set to: " + getConfig().getBoolean("Permissions-Bypass"));
 		Bukkit.getConsoleSender()
@@ -44,7 +47,8 @@ public class Main extends JavaPlugin implements Listener {
 		List<Integer> ports = getConfig().getIntegerList("Ports");
 		if (getConfig().getBoolean("Only-Port")) {
 			if (!ports.contains(Integer.valueOf(port))) {
-				if (getConfig().getBoolean("Permissions-Bypass")) {
+				if (getConfig().getBoolean("Permissions-Bypass")) 
+				{
 					if (!p.hasPermission("scorchproxy.bypass")) {
 						e.disallow(PlayerLoginEvent.Result.KICK_OTHER, ChatColor.translateAlternateColorCodes('&',
 								getConfig().getString("Message").replaceAll("%newline%", "\n")));
