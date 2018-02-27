@@ -1,0 +1,7 @@
+IPs:
+- play.scorchgamez.net
+Ports:
+- 25565
+Only-Port: true
+Message: '&b%newline%&b&lScorch Gamez%newline%&7Please use: play.scorchgamez.net'
+Permissions-Bypass: false
