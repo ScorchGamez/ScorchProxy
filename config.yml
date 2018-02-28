@@ -1,6 +1,6 @@
 #-------------------------------------#
-# This plugin was coded by ItzSkizzy
-# www.scorchgamez.net
+# Original author: Raytex
+# Recoded by: ItzSkizzy
 #-------------------------------------#
 #
 # IP addresses you WANT people to join through.
@@ -14,6 +14,12 @@ Ports:
 - 25565
 Only-Port: true
 #
+# This is the message players will see when they do
+# not have permission to a command. You can use
+# placeholders like '&' for colors and '%player%'
+# for the players username.
+No-Permission: '&cYou do not have permission to issue this command %player%.' 
+#
 # This is the message players will see when they are
 # declined access to the server
 Message: '&b%newline%&b&lScorch Gamez%newline%&7Please use: play.scorchgamez.net'
@@ -24,4 +30,4 @@ Message: '&b%newline%&b&lScorch Gamez%newline%&7Please use: play.scorchgamez.net
 Permissions-Bypass: false
 #
 # Don't touch this
-config-version: 1
+config-version: 1.1

@@ -1,6 +1,11 @@
 name: ScorchProxy
-version: 1.1
+version: 1.2
 main: me.skizzy.scorchproxy.Main
 description: Force users to join through the proxy address
 website: www.scorchgamez.net
-author: ItzSkizzy
+author: ItzSkizzy, Raytex
+commands:
+    scorchproxy:
+         description: ScorchProxy command
+    sp:
+         description: ScorchProxy command
